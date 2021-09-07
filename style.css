@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "Alegreya", sans-serif;
+    background: #333;
+    color: #fff;
+    
+  }
+  
+  h2{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 10px;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .container > div {
+    cursor: pointer;
+    height: 210px;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .5s ease-in;
+  
+  }
+  
+  .container > div:hover{
+    opacity: 0.8;
+    transform: scale(0.98);
+    filter: brightness(50%);
+  }
+
+
+  .container > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+  }
+  
+  .container > div:nth-of-type(6) {
+    grid-column: 3 / 5;
+  }
+  
+  
+  .container > div:nth-of-type(9) {
+    grid-column: 3 / 5;
+  }
+  
+  
+  .container > div:nth-of-type(10) {
+    grid-column: 1 / 3;
+  }
+
+  .container > div:nth-of-type(13) {
+    grid-column: 1 / 5;
+  }
+   
+  
+  .city1{
+    background: url("./images/pexels-ena-marinkovic-3697742.jpg");
+    background-position: bottom;
+    color: #333;
+ 
+  }
+  
+  .city2{
+    background: url("./images/pexels-javon-swaby-2814202.jpg");
+    background-position: bottom;
+
+  }
+
+  .city3{
+    background: url("./images/pexels-polina-kostova-3044807.jpg");
+    background-position: center;
+
+  }
+
+  .city4{
+    background: url("./images/pexels-marta-dzedyshko-2067562.jpg");
+    background-position: center;
+
+  }
+
+  
+  .city5{
+    background: url("./images/pexels-emily-geibel-3772442.jpg");
+    background-position: center;
+
+  }
